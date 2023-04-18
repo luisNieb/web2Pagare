@@ -25,39 +25,39 @@
                     <div class="pagare__numeroGrid">
                         <div>
                             <label class="pagare__label" for="No">No.</label>
-                            <input class="input__sombreaado" type="number" name="No" id="no" min="1" max="100000">
+                            <input class="input__sombreaado" type="number" name="No" id="No" min="1" max="100000">
                             <label class="pagare__labelCantidad"  for="buenoX">BUENO POR $</label>
                             <input class="input__sombreaado" type="number" name="buenoX" id="buenoX" min="100" max="2000000">
                         </div>
                         <div class="pagare__fechaGrid" >
                             <div>
-                                <label class="pagare__labelFecha" for="En">En</label>
-                                <input class="input__linea"type="text" name="En" id="En">
+                                <label class="pagare__labelFecha" for="lugar">En</label>
+                                <input class="input__linea"type="text" name="lugar" id="lugar">
                             </div>
                             <div>
-                                <label class="pagare__label"  for="a">a</label>
-                                <input class="input__lineaCorta" type="number" name="a" id="a" min="1" max="31">
+                                <label class="pagare__label"  for="dia">a</label>
+                                <input class="input__lineaCorta" type="number" name="dia" id="dia" min="1" max="31">
                             </div>
                             <div>
-                                <label class="pagare__label"for="de">de</label>
-                                <select class="input__linea" type="text" name="de" id="de">
-                                    <option value="en">Enero</option>
-                                    <option value="Fe">Febrero</option>
-                                    <option value="MAr">Marzo</option>
-                                    <option value="Ab">Abril</option>
-                                    <option value="May">mayo</option>
-                                    <option value="Ju">Junio</option>
-                                    <option value="Jul">Juilio</option>
-                                    <option value="Ago">Agosto</option>
-                                    <option value="Sep">Septiembre</option>
-                                    <option value="Oct">Octubre</option>
-                                    <option value="Nov">Noviemnbre</option>
-                                    <option value="Dic">Diciembre</option>
+                                <label class="pagare__label"for="Mes">de</label>
+                                <select class="input__linea" type="text" name="Mes" id="Mes">
+                                    <option value="Enerp">Enero</option>
+                                    <option value="Febrero">Febrero</option>
+                                    <option value="Marzo">Marzo</option>
+                                    <option value="Abril">Abril</option>
+                                    <option value="Mayo">mayo</option>
+                                    <option value="Junio">Junio</option>
+                                    <option value="Julio">Julio</option>
+                                    <option value="Agosto">Agosto</option>
+                                    <option value="Septiembre">Septiembre</option>
+                                    <option value="Octubre">Octubre</option>
+                                    <option value="Noviembre">Noviembre</option>
+                                    <option value="Diciembre">Diciembre</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="pagare__label" for="de20">de 20</label>
-                                <input class="input__lineaCorta" type="number" name="de20" id="de20" min="23" max="30">
+                                <label class="pagare__label" for="anio">de 20</label>
+                                <input class="input__lineaCorta" type="number" name="anio" id="anio" min="23" max="30">
                             </div>
                             
                         </div><!--grid separando la fecha-->
@@ -128,11 +128,11 @@
             <section class=""> 
                 <div>
                     <p class="pagare__parrafo">valor recibido a mi (nuestra) entera satisfaccion.Este pagare froma
-                     parte de una serie numerada de 1 al<input class="input__lineaCorta" id="serie" type="number" min="1" max="100" required>
+                     parte de una serie numerada de 1 al<input class="input__lineaCorta" name="serie" id="serie" type="number" min="1" max="100" required>
                     y todos estan sujetos a la condicion de que ,al no pagarse cualquiera de ellos a su vencimiento
                     ,seran exigibles  todos los que sigan en numero ,ademas de los ya vencidos,desde la fecha de vencimiento
                     de este documento hasta el dia de su liquidacion, causara intereses moratorios al tipo de
-                  <input class="input__lineaCorta" id="interes" type="number" min="1" max="100" required> % mensusal ,pagadero en esta ciudad.</p>
+                  <input class="input__lineaCorta" id="interes" name="interes" type="number" min="1" max="100" required> % mensusal ,pagadero en esta ciudad.</p>
                 </div>
     
               </section><!--parrafo-->
