@@ -26,7 +26,7 @@ $Newconn = new ConnectionMySQL();
 ///creamos conexion
 $Newconn->CreateConnection();
 
-echo $query="insert into datosPagare values(null,'$buenoX','$lugar','$dia','$Mes','$anio','$personaPaga',
+ $query="insert into datosPagare values(null,'$buenoX','$lugar','$dia','$Mes','$anio','$personaPaga',
 '$lugarPago','$fechaPago','$cantidadDe','$serie','$interes','$nombre','$Direccion','$Poblacion','$tel','$firma')";
 $result = $Newconn->ExecuteQuery($query);
 if($result){
@@ -38,10 +38,9 @@ if($result){
 		}
 	}
 
-echo "El nombre insertado es: ".$nombre."</br>";
-echo "El apellido insertado es: ".$ap."</br>";
-//header("Location: mostrar.php");
-//header("Location: mostrar.php");	
+
+header("Location: mostrar.php");
+header("Location: mostrar.php");	
 
 
 	

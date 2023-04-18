@@ -1,0 +1,153 @@
+:root{
+    --blanco: #fff;
+    --morado:#5806e6;
+    --naranja: #fa9a4b;
+    --dorado:#d4af33;
+    --rojo:red;
+    
+    
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background: linear-gradient(
+    to right,
+    var(--blanco) 0%,
+    var(--morado) 100%
+  );
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Alkatra', cursive;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+h1, h2, h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.contenedor{
+    background-color: var(--morado);
+    padding: 2rem;
+    border: .1rem solid black;
+    box-shadow: 4px 4px 4px  var(--naranja);
+    border-radius: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+.contenedor__inputs{
+    padding-top: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.registrar__index{
+    text-align: center;
+}
+.registro__inputs{
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem  solid var(--naranja);
+    width: 100%;
+    margin-right:2rem;
+    margin-top: 1rem;
+
+}
+::placeholder {
+    color:var(--dorado); /* Cambiar el color del texto del placeholder */
+    opacity: 1; /* Cambiar la opacidad del placeholder */
+  }
+.registro__enviar{
+    margin-top: 2rem;
+}
+.registro__label {
+    font-weight: 800;
+    color: #fff;
+   
+}
+.actualizar__label {
+    font-weight: 900;
+   
+}
+
+.registro__enviar{
+    margin: 2rem 0 2rem 0; /*arriba derecha abajo izquierda*/
+    padding: .5rem;
+    width:13rem;
+    border:.1rem solid black;
+    background-color:var(--dorado) ;
+    border-radius: .5rem;
+    text-align: center;
+    color:var(--blanco);
+    font-size: 3rem;
+    transition:background-color .3s ;
+}
+.registro__enviar:hover{
+    background-color: #e2e606;
+    color: black;
+}
+th{
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+    background-color: var(--dorado);
+    border-radius: 2rem;
+    font-size: medium ;
+    
+    
+}
+td{
+    
+    font-size: small;
+    text-align: center;
+    border: .3rem solid #d4af33;
+    color: var(--naranja);
+}
+td .actualizar{
+ 
+  text-decoration: none; 
+  color: inherit; 
+  background-color: var(--blanco);
+  color: var(--morado);
+  transition:background-color .3s ;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+td .actualizar:hover{
+    background-color: aquamarine;
+    
+}
+td .borrar{
+  text-decoration: none; /* quita el subrayado del enlace */
+  color: inherit; /* hereda el color del texto del elemento padre */
+  background-color: var(--rojo);
+  color: var(--blanco);
+  transition:background-color .3s ;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+td .borrar:hover{
+   background-color: brown;
+}
