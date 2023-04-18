@@ -46,7 +46,7 @@
                                     <div class='pagare__numeroGrid'>
                                     <div>
                                         <label class='pagare__label' for='No'>No.</label>
-                                        <input class='input__sombreaado' type='number' name='No' id='No' value=".$row[0]." min='1' max='100000'>
+                                        <input class='input__sombreaado' type='number' name='No' id='No' value=".$row[0]." min='1' max='100000'readonly >
                                         <label class='pagare__labelCantidad'  for='buenoX'>BUENO POR $</label>
                                         <input class='input__sombreaado' type='number' name='buenoX' id='buenoX' value=".$row[1]." min='100' max='2000000'>
                                     </div>
