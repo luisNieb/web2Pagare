@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylePagare.css">
+    <title>Pagare</title>
+</head>
+<body>
+      <form class="pagare__contenedor" >
+         <div class="pagare__contenedor--color">
+            <div class="pagare__inicio">
+                <div class="inicio__grid">
+                    <div class="">
+                        <input type="submit" class="pagare__titulo" value="Pagare" onclick="" id="boton"></input>
+                    </div>
+                    
+                    <div class="pagare__numeroGrid">
+                        <div>
+                            <label class="pagare__label" for="No">No.</label>
+                            <input class="input__sombreaado" type="number" name="No" id="no" min="1" max="100000">
+                            <label class="pagare__labelCantidad"  for="buenoX">BUENO POR $</label>
+                            <input class="input__sombreaado" type="number" name="buenoX" id="buenoX" min="100" max="2000000">
+                        </div>
+                        <div class="pagare__fechaGrid" >
+                            <div>
+                                <label class="pagare__labelFecha" for="En">En</label>
+                                <input class="input__linea"type="text" name="En" id="En">
+                            </div>
+                            <div>
+                                <label class="pagare__label"  for="a">a</label>
+                                <input class="input__lineaCorta" type="number" name="a" id="a" min="1" max="31">
+                            </div>
+                            <div>
+                                <label class="pagare__label"for="de">de</label>
+                                <select class="input__linea" type="text" name="de" id="de">
+                                    <option value="en">Enero</option>
+                                    <option value="Fe">Febrero</option>
+                                    <option value="MAr">Marzo</option>
+                                    <option value="Ab">Abril</option>
+                                    <option value="May">mayo</option>
+                                    <option value="Ju">Junio</option>
+                                    <option value="Jul">Juilio</option>
+                                    <option value="Ago">Agosto</option>
+                                    <option value="Sep">Septiembre</option>
+                                    <option value="Oct">Octubre</option>
+                                    <option value="Nov">Noviemnbre</option>
+                                    <option value="Dic">Diciembre</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="pagare__label" for="de20">de 20</label>
+                                <input class="input__lineaCorta" type="number" name="de20" id="de20" min="23" max="30">
+                            </div>
+                            
+                        </div><!--grid separando la fecha-->
+                        
+                     </div><!--numero bueno por y fecho-->
+                </div>
+              
+            </div><!--PRIMER SEGMENTO DEL PAGARE-->
+            <div class="pagare__seccionDosGrid">
+                <div>
+                </div>
+                <div>
+                    <p class="pagare__lugarFechaNacimiento">Lugar y fecha de nacimiento</p>
+                </div>
+            </div><!--letras pequnias -->
+            <section >
+                <div class="pagare__seccionTresGrid">
+                    <div>
+                      <p class="pagare__paga">Debe(mos) pagare(mos) incondicinalmente por este Pagare a la orden de</p>
+                    </div>
+                    <div>
+                        <input class="input__linea--larga"type="text" name="personaPaga" id="personaPaga" required>
+                    </div>
+
+                </div><!--seccion de la persona que paga-->
+
+             <section class="pagare__seccionDosGrid" >
+                <div>
+                </div>
+                <div>
+                    <p class="pagare__nombrePersonaPagarse">Nombre de la persona ha quien a de pagarse</p>
+                </div>
+             </section><!--nombre de la persona a quien ha de pagarse-->
+
+            </section>
+            <section>
+                <div class="pagare__seccionCuatroGrid">
+                   <div>
+                        <label class="pagare__label" for="lugarPago">en</label>
+                        <input class="input__linea--xxlarga" type="text" name="lugarPago" id="lugarPago" required>
+                   </div>
+                   <div>
+                        <label for="lugarPago">el</label>
+                        <input class="input__lineaCorta" type="text" name="elPago" id="elPago" required>
+                   </div>
+                   <div>
+                        <input class="input__linea--xxlarga" type="date" name="fechaPago" id="fechaPago" required>
+                   </div>
+                </div>
+            </section><!--en__________ el__ _____________-->
+
+            <section class="pagare__seccionDosGrid">
+                <div>
+                    <p class="pagare__lugarFecha">Lugar  de pago</p>
+                </div>
+                <div>
+                    <p class="pagare__lugarFecha">fecha de pago</p>
+                </div>
+            </section><!--letras pequnias lugar de pago fecha de pago -->
+            <section class="">
+                <div>
+                     <p class="">La cantidad de:</p>
+                </div>
+                <div>
+                    <input class="input__sombreaado--100" type="text" name="cantidadDe" id="CantidadD" required>
+                </div>
+            </section><!--la Cantidad de-->
+            <section class=""> 
+                <div>
+                    <p class="pagare__parrafo">valor recibido a mi (nuestra) entera satisfaccion.Este pagare froma
+                     parte de una serie numerada de 1 al<input class="input__lineaCorta" id="serie" type="number" min="1" max="100" required>
+                    y todos estan sujetos a la condicion de que ,al no pagarse cualquiera de ellos a su vencimiento
+                    ,seran exigibles  todos los que sigan en numero ,ademas de los ya vencidos,desde la fecha de vencimiento
+                    de este documento hasta el dia de su liquidacion, causara intereses moratorios al tipo de
+                  <input class="input__lineaCorta" id="interes" type="number" min="1" max="100" required> % mensusal ,pagadero en esta ciudad.</p>
+                </div>
+    
+              </section><!--parrafo-->
+              <footer>
+                <div class="footer__grid">
+                    <div class="footer__izq">
+                        <p>Nombre y datos del deudor</p>
+                        <div>
+                            <label class="pagare__label--nombre" for="nombre">Nombre</label>
+                            <input class="input__linea--larga--footer" type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div>
+                            <label class="pagare__label" for="Direccion">Direccion</label>
+                            <input class="input__linea--larga--footer" type="text" name="Direccion" id="Direccion" required>
+                        </div>
+                        <div>
+                            <label class="pagare__label" for="Poblacion">Poblacion</label>
+                            <input class="input__linea--mediana--footer" type="text" name="Poblacion" id="Poblacion" required>
+                            <label class="pagare__label" for="tel">tel.</label>
+                            <input class="input__linea--footer" type="number" name="tel" id="tel" min="1000000000" max="9999999999" required>
+                        </div>
+                        <div>
+                           
+                        </div>
+                      
+                    </div><!--nombre y datos del deudor-->
+                    <div class="footer__der">
+                    <div>
+                        <p class="footer__der--acepto">Acepto(amos) y paga(remos) a su vencimineto</p>
+                    </div>
+                    <div>
+                        <input class="input__linea--xxlarga--footer" type="text" name="firma" id="firma">
+                    </div>
+                    <div>
+                        <p class="pagare__firma">Firma(s)</p>
+                    </div>
+                    </div>
+                </div>
+              </footer>
+
+         </div><!--contorno del pagare-->
+          
+
+        </form>
+    
+    
+</body>
+<script src="js/app.js"></script>
+</html>
