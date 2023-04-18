@@ -17,5 +17,6 @@ const tel=document.querySelector("#tel")
 const firma=document.querySelector("#firma")
 const boton=document.querySelector("#boton")
 
-//hola esto no jala 
+//esto solo es uuna prueba
+
 const fechaER = /^\d{2}\/\d{2}\/\d{4}$/;
