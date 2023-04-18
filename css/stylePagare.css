@@ -125,6 +125,7 @@ p{
     }
 }
 .input__linea--larga{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid var(--naranja);
     width: 23rem;
@@ -132,6 +133,7 @@ p{
     
 }
 .input__linea--mediana--footer{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid black;
     background-color:var(--naranja);
@@ -139,6 +141,7 @@ p{
     margin-right:1rem;
 }
 .input__linea--larga--footer{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid black;
     background-color:var(--naranja);
@@ -148,6 +151,7 @@ p{
 }
 
 .input__linea--xxlarga{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid var(--naranja);
     width: 24rem;
@@ -183,6 +187,7 @@ p{
     }
 }
 .input__linea{
+    text-align: center;
     background-color: transparent;
     border: none;
     border-bottom: .2rem  solid var(--naranja);
@@ -190,6 +195,7 @@ p{
     
 }
 .input__linea--footer{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid black;
     background-color: var(--naranja);
@@ -202,6 +208,7 @@ p{
     }
 }
 .input__lineaCorta{
+    text-align: center;
     border: none;
     border-bottom: .2rem  solid var(--naranja);
     width: 4rem;
