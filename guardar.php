@@ -6,8 +6,8 @@ $No = $_POST['No'];
 $buenoX= $_POST['buenoX'];
 $lugar = $_POST['lugar'];
 $dia = $_POST['dia'];
-$Mes = $_POST['Mes'];
-$anio = $_POST['anio'];
+ $Mes = $_POST['Mes'];
+echo $anio =  $_POST['anio'];
 $personaPaga = $_POST['personaPaga'];
 $lugarPago = $_POST['lugarPago'];
 $fechaPago = $_POST['fechaPago'];
@@ -26,7 +26,7 @@ $Newconn = new ConnectionMySQL();
 ///creamos conexion
 $Newconn->CreateConnection();
 
-$query="insert into datosPagare values(null,'$buenoX','$lugar','$dia','$mes','$anio','$personaPaga',
+echo $query="insert into datosPagare values(null,'$buenoX','$lugar','$dia','$Mes','$anio','$personaPaga',
 '$lugarPago','$fechaPago','$cantidadDe','$serie','$interes','$nombre','$Direccion','$Poblacion','$tel','$firma')";
 $result = $Newconn->ExecuteQuery($query);
 if($result){
